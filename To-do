@@ -1,4 +1,5 @@
-Fancy title
-Some small backstory?
-Stats
-Functions for combat
+Stats (attack/defense, handling exp gain and leveling)
+minor adjustment to battle calculation to be based on stats instead of placeholder numbers
+boss battle and final area (cave at summit)
+more line art for areas?
+congratulations function
