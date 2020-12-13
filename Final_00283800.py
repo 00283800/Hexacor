@@ -120,7 +120,7 @@ def squor() :
                 sqchp = 0
                 gameover()
 
-#function to start fields
+#function for fields
 def fields() :
 
     system("cls")
@@ -130,6 +130,7 @@ def fields() :
     system("cls")
     tricor()
 
+#function for mountains
 def mountains() :
 
     system("cls")
@@ -139,7 +140,7 @@ def mountains() :
     system("cls")
     squor()
 
-#function for being in village
+#function for village
 def village() :
 
     print("The village is quiet, as usual.")
