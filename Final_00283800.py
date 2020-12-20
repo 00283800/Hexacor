@@ -75,7 +75,7 @@ def tricor() :
     herochp = heromhp
 
     #loop for battle duration
-    while trichp > 0 :
+    while trichp != 100 :
         
         print("             /\ ")
         print("            /  \ ")
@@ -114,6 +114,7 @@ def tricor() :
                 print("You run away back to the village as quickly as you are able to.")
                 input("Press enter to continue.\n")
                 system("cls")
+                trichp = 100
                 village()
         
         else :
@@ -142,6 +143,7 @@ def tricor() :
                         print("Level:",herol,"\nHP:",heromhp,"\nstr:",herostr,"\ndef:",herodef,"\n")
                         input("Press enter to continue back to village.\n")
                         system("cls")
+                        trichp = 100
                         return heroxp, heromhp, herostr, herodef
 
                 else :
@@ -149,12 +151,13 @@ def tricor() :
                         print("The tricor crumples in a heap, defeated.\nYou head back to the village to rest.")
                         input("Press enter to continue.\n")
                         system("cls")
+                        trichp = 100
                         return heroxp
 
         #hero defeated
         if herochp <= 0 :
 
-                trichp = 0
+                trichp = 100
                 gameover()
 
 #function for squor enemy
@@ -173,7 +176,7 @@ def squor() :
     herochp = heromhp
 
     #loop for battle duration
-    while sqchp > 0 :
+    while sqchp != 100 :
         
         print("         ________________  ")
         print("        |                | ")
@@ -213,6 +216,7 @@ def squor() :
                 print("You run away back to the village as quickly as you are able to.")
                 input("Press enter to continue.\n")
                 system("cls")
+                sqchp = 100
                 village()
 
         else :
@@ -239,6 +243,7 @@ def squor() :
                         print("Level:",herol,"\nHP:",heromhp,"\nstr:",herostr,"\ndef:",herodef,"\n")
                         input("Press enter to continue back to village.\n")
                         system("cls")
+                        sqchp = 100
                         return heroxp, heromhp, herostr, herodef
 
                 else :
@@ -246,12 +251,13 @@ def squor() :
                         print("The squor completely folds over itself, defeated.\nYou head back to the village to rest.")
                         input("Press enter to continue.\n")
                         system("cls")
+                        sqchp = 100
                         return heroxp
 
         #hero defeated
         if herochp <= 0 :
                
-                sqchp = 0
+                sqchp = 100
                 gameover()
 
 #function for hexacor phase 2
@@ -532,13 +538,25 @@ def stats() :
 
         system("cls")
         print("Level:",herol,"\nHP:",heromhp,"\nstr:",herostr,"\ndef:",herodef,"\ncurrent exp:",heroxp,"\nexp to level:",herol * 7 + 5)
-        input("Press enter to continue.\n")
+        input("Press enter to return.\n")
         system("cls")
         village()
 
 #function for village
 def village() :
 
+    print("            _________                            ________________                                   ")
+    print("           /         \                          /                \                                  ")
+    print("          /___________\                        /                  \                                 ")
+    print("           |       o |                        /                    \                                ")
+    print("           | o  _    |                       /                      \                               ")
+    print("           |___| |___|                      /________________________\                              ")
+    print("                                              |                    |                                ")
+    print("                                              |  []    ____        |                                ")
+    print("                                              |       /    \       |                                ")
+    print("                                              |      |      |  []  |                                ")
+    print("                                              |______|      |______|                                ")
+    print("")
     print("The village is quiet, as usual.")
 
     #choices of where to go
